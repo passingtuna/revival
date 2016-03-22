@@ -127,56 +127,37 @@ function NNCheck(){
  </head>
  <body>
  <form name=joinform method=post action="join_ok.jsp">
-  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-    <tr>
-    <td align="center" colspan="4" >이름</td>
+<div>
+<td align="center" colspan="4" >이름</td>
       <td><input name="jname" size="20" maxlength="50"></td>
-     </tr>
-     <tr>
     <td align="center" colspan="4" >닉네임</td>
       <td><input name="jnname" size="20" maxlength="50">
       <input type=button value="중복 확인" OnClick="javascript:NNCheck();" readonly/></td>
-     </tr>
-     <tr>
+
       <td align="center" colspan="4" >회원ID</td>
       <td><input name="jid" size="20" maxlength="50">
       <input type=button value="중복 확인" OnClick="javascript:IDCheck();" readonly/></td>
-     </tr>
-     
-    <tr>
+
       <td align="center" colspan="4" >비밀번호</td>
       <td><input name="jpass" size="20" maxlength="50"></td>
-    </tr>
-    
-    <tr>
+
       <td align="center" colspan="4" >비밀번호 확인</td>
       <td><input name="jpassok" size="20" maxlength="50"></td>
-   </tr>
-   
-    <tr>
+
       <td align="center" colspan="4" >이메일</td>
       <td><input name="jemail" size="20" maxlength="50"></td>
-    </tr>
-    
-    <tr>
+
         <td align="center" colspan="4" >핸드폰</td>
         <td><input name="jtell" size="20" maxlength="50"></td>
-    </tr>
-       <tr>
+
     <td align="center" colspan="4" >주소</td>
       <td><input id="jzipcode" name ="jzipcode" size="10" maxlength="100" readonly/>
        <input type=button value="검색" OnClick="javascript:popup();"></td>
 
-     </tr> 
-     
-     <tr>
      <td align="center" colspan="4">&nbsp;</td>
       <td><input id="jaddress1" name ="jaddress1" size="50" maxlength="50">&nbsp;<input id="jaddress2" name ="jaddress2" size="50" maxlength="50"></td>
-     </tr> 
-    <tr>
       <td colspan="2"><input type=button value="등록" OnClick="javascript:JoinCheck();">
-     </tr>
-    </table>
+</div>
     </form>
 </body>
 </html>
